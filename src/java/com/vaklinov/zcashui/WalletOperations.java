@@ -161,7 +161,7 @@ public class WalletOperations
 			
 			JFileChooser fileChooser = new JFileChooser();
 			fileChooser.setDialogTitle("Backup wallet to file...");
-			fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+			fileChooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
 			fileChooser.setCurrentDirectory(OSUtil.getUserHomeDirectory());
 			 
 			int result = fileChooser.showSaveDialog(this.parent);
